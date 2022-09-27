@@ -120,7 +120,7 @@ String.prototype.toArabicDigits= function(){
 }
 
 function getPrayerTime(city){
-  axios.get("http://api.aladhan.com/v1/timingsByCity/:date_or_timestamp?city="+city+"&country=*")
+  axios.get("https://api.aladhan.com/v1/timingsByCity/:date_or_timestamp?city="+city+"&country=*")
     .then(function (response) {
       let data = response.data.data;
       document.getElementById("fajr").innerText = amPmFormat(data.timings.Fajr).toArabicDigits();
