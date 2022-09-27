@@ -1,0 +1,84 @@
+body{
+    background: url("./assets/images/bg.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+
+h1, h4, h5{
+  font-family: "Almarai", sans-serif;
+}
+
+h5{
+  font-size: 10px;
+}
+.prayer{
+  margin-top: 5%;
+  visibility: hidden;
+}
+
+.text-box{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+.header{
+    text-align: center;
+    color: white;
+    margin-top: 10%;
+}
+
+@media (max-width: 480px) {
+    .text-box {
+      font-size: 20px;
+      text-align: right;
+      margin-top: 10%;
+    }
+    h4, h5{
+       font-size: 20px; 
+       display: inline;
+    }
+    h5{
+      text-align: center;
+      float: left;
+    }
+
+  }
+
+  .input-button {
+    margin-right: -1px !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+    min-width: 5%;
+    opacity: 50%;
+    
+}
+
+
+
+.input-search {
+margin-right: 20%;
+  max-width: 55%;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    opacity: 50%;
+    font-family: "Almarai", sans-serif;
+}
+
+.next-prayer{
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 50px;
+ 
+  color: black;
+  mix-blend-mode: lighten; /* This makes the cutout text possible */
+}
